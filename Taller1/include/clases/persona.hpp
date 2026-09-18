@@ -1,3 +1,6 @@
+#ifndef PERSONA_HPP
+#define PERSONA_HPP
+
 // persona hpp
 #include <string>
 
@@ -16,3 +19,4 @@ public:
 
     virtual ~Persona() {} // destructor 
 };
+#endif
