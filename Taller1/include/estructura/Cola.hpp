@@ -32,5 +32,5 @@ public:
     const LinkedList<T>& getList() const;
 };
 
-#include "../../src/Estructura_Datos/Cola.cpp"
+#include "../../src/estructura/Cola.cpp"
 #endif
