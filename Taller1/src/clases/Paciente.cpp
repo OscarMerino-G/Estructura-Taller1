@@ -1,28 +1,27 @@
-#ifndef PACIENTE_CPP
-#define PACIENTE_CPP
+#include "Paciente.hpp"
 
-#include "Persona.hpp" 
-#include <string>
-#include <iostream>
+// Constructor defautl
+Paciente::Paciente() : Persona("", 0), id(""), servicioDestino("") {}
 
-class Paciente : public Persona {
-private:
-    std::string id;
-    std::string servicioDestino;
+// Constructor 
+Paciente::Paciente(std::string _id, std::string _nombre, int _edad, std::string _servicio)
+    : Persona(_nombre, _edad), id(_id), servicioDestino(_servicio) {}
 
-public:
-    // Constructores
-    Paciente();
-    Paciente(std::string id, std::string nombre, int edad, std::string servicio);
+Paciente::~Paciente() {
+    // Destructr
+}
 
-    // Gets
-    std::string getId() const;
-    std::string getServicio() const;
-    
-    void mostrar() const;
+std::string Paciente::getId() const {
+    return id;
+}
 
-    //destrool
-    ~Paciente() override;
-};
+std::string Paciente::getServicio() const {
+    return servicioDestino;
+}
 
-#endif
+void Paciente::mostrar() const {
+    std::cout << "ID: " << id << "\n";
+    std::cout << "Nombre: " << nombre << "\n";
+    std::cout << "Edad: " << edad << "\n";
+    std::cout << "Servicio: " << servicioDestino << "\n";
+}
