@@ -27,12 +27,12 @@ void Cola<T>::clear() {
 }
 
 template <typename T>
-void Cola<T>::enqueue(const T& data) {
+void Cola<T>::encolar(const T& data) {
     list.pushBack(data);
 }
 
 template <typename T>
-void Cola<T>::dequeue() {
+void Cola<T>::deencolar() {
     list.popFront();
 }
 
@@ -67,18 +67,13 @@ T& Cola<T>::at(size_t index) {
 }
 
 template <typename T>
-void Cola<T>::insertAt(size_t index, const T& data) {
-    list.insertAt(index, data);
+void Cola<T>::insertAt(size_t index, const T& info) {
+    list.insertAt(index, info);
 }
 
 template <typename T>
 void Cola<T>::removeAt(size_t index) {
     list.removeAt(index);
-}
-
-template <typename T>
-void Cola<T>::shuffle() {
-    list.shuffle();
 }
 
 template <typename T>
