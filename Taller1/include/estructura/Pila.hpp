@@ -20,6 +20,7 @@ public:
     void pop();
     T& top();
     const T& top() const;
+    const Lista<T>& getList() const { return list; }
 };
 
 #include "../../src/estructura/Pila.cpp"
