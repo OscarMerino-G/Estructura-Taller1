@@ -4,8 +4,8 @@ public:
     N info;
     
     // Nodo doble enlace
-    Node<N>* next;
-    Node<N>* prev; 
+    Nodo<N>* next;
+    Nodo<N>* prev; 
     
     Nodo();
     explicit Nodo(const N& info);
