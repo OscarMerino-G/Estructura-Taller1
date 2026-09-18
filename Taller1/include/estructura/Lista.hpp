@@ -50,5 +50,5 @@ public:
 private:
     Nodo<T>* getNodoEn(size_t index) const;
 };
-
+#include "../../src/estructura/Lista.cpp"
 #endif
