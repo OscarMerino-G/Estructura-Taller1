@@ -1,7 +1,7 @@
-#ifndef LINKEDLIST_CPP
-#define LINKEDLIST_CPP
+#ifndef LISTA_CPP
+#define LISTA_CPP
 
-#include "../../include/Estructura_Datos/Lista.hpp"
+#include "../../include/estructura/Lista.hpp"
 #include <cstdlib>
 
 template <typename T>
