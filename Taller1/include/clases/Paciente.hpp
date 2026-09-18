@@ -2,6 +2,8 @@
 #define PACIENTE_HPP
 // paciente hpp
 #include "Persona.hpp"
+#include <string>
+
 class Paciente {
 private:
     std::string id;
