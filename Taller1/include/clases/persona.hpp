@@ -7,7 +7,12 @@ protected:
     int edad;
 
 public:
+    // constructor
     Persona(std::string n, int e) : nombre(n), edad(e) {}
+
+    // getts
     std::string getNombre() const { return nombre; }
     int getEdad() const { return edad; }
+
+    virtual ~Persona() {} // destructor 
 };
